@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var column, star, row;
+
+        row = window.prompt("Enter your Row:");
+        document.write("<h4>1) Triangle pyramid</h4>")
+        document.write(row, "<br>");
+
+        //tri angle pyramid ulta 
+        for (column = row; column >= 1; column--) {
+            for (star = 1; star <= column; star++) {
+                document.write("* ");
+            }
+            document.write("<br>");
+        }
+        //triangle pyramid 
+
+        for (column = 1; column <= row; column++) {
+            for (star = 1; star <= column; star++) {
+                document.write(column, " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        // var i, j;
+        // let input, alphabet = 'A';
+        // document.write("Enter Last Alphabet: ");
+        // input = window.prompt("Enter an alphabet");
+
+        // for (i = 1; i <= (input - 'A' + 1); ++i) {
+        //     for (j = 1; j <= i; ++j) {
+        //         document.write(alphabet, " ");
+        //     }
+        //     ++alphabet;
+        //     document.write("<br>");
+        // }
+
+        let text = String.fromCharCode(window.prompt("ENter a number: "))
+        document.write(text);
+
+        var space, row;
+        row = window.prompt("Enter the row");
+        for (space = 1; space <= row; ++space) {
+            for (let text = 0; text <= space; ++text) {
+                document.write(text, " ");
+            }
+            document.write("<br>");
+        }
+    </script>
+
+</body>
+
+</html>
