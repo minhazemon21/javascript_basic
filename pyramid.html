@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        document.write("<h4>Pyramid middle align<h4>");
+
+        var dspace, space, row, star;
+        row = window.prompt();
+
+        document.write(row, "<br>");
+        for (space = 1; space <= row; space++) {
+            for (dspace = 1; dspace <= row - space; dspace++) {
+                document.write(" ");
+            }
+            for (star = 1; star <= (2 * space - 1); star++) {
+                document.write("* ");
+                document.write("<br>");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

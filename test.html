@@ -32,6 +32,20 @@
             }
             document.write("<br>");
         }
+
+        document.write("<h4>Pyramid middle align<h4>");
+
+        var dspace;
+        document.write(row, "<br>");
+        for (space = 1; space <= row; space++) {
+            for (dspace = 1; dspace <= row - space; dspace++) {
+                document.write(" ");
+            }
+            for (star = 1; star <= (2 * space - 1); star++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
     </script>
 
 </body>
