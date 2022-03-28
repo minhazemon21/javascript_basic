@@ -11,22 +11,58 @@
 <body>
 
     <script type="text/javascript">
-        document.write("<h4>Pyramid middle align<h4>");
-
+        // int main() {
+        //     int i, space, rows, k = 0;
+        //     printf("Enter the number of rows: ");
+        //     scanf("%d", & rows);
+        //     for (i = 1; i <= rows; ++i, k = 0) {
+        //         for (space = 1; space <= rows - i; ++space) {
+        //             printf("  ");
+        //         }
+        //         while (k != 2 * i - 1) {
+        //             printf("* ");
+        //             ++k;
+        //         }
+        //         printf("\n");
+        //     }
+        //     return 0;
+        // }
+        // document.write("<h4>Pyramid middle align<h4>");
+        // var i, space, row, k;
+        // document.write("Enter the number of row: ");
+        // row = window.prompt("Enter row: ");
+        // for (i = 1; i <= row; ++i, k = 0) {
+        //     for (space = 1; space <= row - i; ++space) {
+        //         document.write("  ");
+        //     }
+        //     while (k != 2 * i - 1) {
+        //         document.write("* ");
+        //         ++k;
+        //     }
+        //     debugger;
+        //     document.write("<br>");
+        // }
         var dspace, space, row, star;
         row = window.prompt();
 
+
         document.write(row, "<br>");
-        for (space = 1; space <= row; space++) {
+
+        for (space = 1; space <= row; space++, dspace = 0) {
             for (dspace = 1; dspace <= row - space; dspace++) {
                 document.write(" ");
             }
             for (star = 1; star <= (2 * space - 1); star++) {
                 document.write("* ");
-                document.write("<br>");
+
             }
+            document.write("<br>");
 
         }
+        for (i = 0; i <= row; i++) {
+
+        }
+        alert("Hi There")
     </script>
 
 </body>
