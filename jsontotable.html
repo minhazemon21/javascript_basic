@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+    th{ 
+        color:#fff;
+            }
+</style>
+
+<button type="button" value="btn-s">Button</button>
+<table class="table table-striped">
+    <tr  class="bg-info">
+        <th>Name</th>
+        <th>Age</th>
+        <th>Birthday</th>
+    </tr>
+
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+
+<script>
+	var myArray = [
+    { 'question': 'Who is the best footballer in the world', 'option1':'M', 'option2':'N', 'option3':'P', 'option4':'Q'},
+    { 'question': 'who is the best Cricketer in the world', 'option1':'M', 'option2':'N', 'option3':'P', 'option4':'Q'},
+    { 'question': 'who is the best teacher in the world', 'option1':'M', 'option2':'N', 'option3':'P', 'option4':'Q'},
+    { 'question': 'who is the best journalist in the world', 'option1':'M', 'option2':'N', 'option3':'P', 'option4':'Q'},
+
+
+	]
+	
+	buildTable(myArray)
+
+
+
+	function buildTable(data){
+		var table = document.getElementById('myTable')
+
+		for (var i = 0; i < data.length; i++){
+			var row = `<tr>
+							<td>${data[i].question}</td>
+							
+					  </tr>
+                      <tr>
+                        <td>${data[i].option1}</td>
+							
+                        </tr>
+                        <tr>
+                            <td>${data[i].option2}</td>
+                            </tr>
+                            <tr>
+                        <td>${data[i].option3}</td>
+							
+                        </tr>
+                        <tr>
+                            <td>${data[i].option4}</td>
+                            </tr>
+                      
+                      `
+			table.innerHTML += row
+
+
+		}
+	}
+
+</script>
+</body>
+</html>
